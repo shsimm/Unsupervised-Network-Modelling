@@ -1,0 +1,46 @@
+---
+title: "plotting modules"
+author: "Shu'ayb Simmons"
+date: "2023-02-23"
+output: html_document
+---
+
+```{r Network plots}
+
+# Generate refined module network plots:
+pnet.obj <- plot_module(output.summary = summary.output,
+                        PFN = g,
+                        subset.module = "c1_3",
+                        layout = "kamada.kawai",
+                        label.hubs.only = TRUE,
+                        gene.set = NULL,
+                        color.code =  "grey",
+                        output.plot = FALSE,
+                        out.dir = "modulePlot",
+                        col.names = c("magenta","green","cyan"),
+                        label.scaleFactor = 20,
+                        hubLabel.col = "black",
+                        hubLabel.sizeProp = 1,
+                        show.topn.hubs = Inf,
+                        show.legend = TRUE)
+print(pnet.obj[[1]])
+
+```
+
+
+```{r Hierarchy models}
+
+module.table <- summary.output$module.table
+colnames(module.table)[1] <- "id" # first column of module table must be labelled as "id".
+
+hierarchy.obj <- plot_module_hierarchy(module.table = module.table,
+                                       label.scaleFactor = 0.15,
+                                       arrow.size = 0.03,
+                                       node.label.color = "blue")
+
+print(hierarchy.obj[[1]])
+
+```
+
+
+
