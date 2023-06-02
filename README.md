@@ -12,7 +12,7 @@ There are *three* analyses in this repository
 There are *three* files in this repository
 1) MEGENA_plotting (plotting_megena.Rmd)
 2) MEGENA (megena.R)
-3) VMEGENA.sh (megena.sh)
+3) MEGENA.sh (megena.sh)
 
 Note: 
 - Due to MEGENA being a computationally heavy analysis this script is a R file, prepared for slurm workload manager submission. 
