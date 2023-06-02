@@ -15,5 +15,5 @@ There are *three* files in this repository
 3) VMEGENA.sh (megena.sh)
 
 Note: 
-- Due to MEGENA being a computationally heavy analysis this script is a R file, prepared for workload manager submission. 
+- Due to MEGENA being a computationally heavy analysis this script is a R file, prepared for slurm workload manager submission. 
 - The shell file (megena.sh) will run the MEGENA on a slurm workspace manager using 24 cores.
