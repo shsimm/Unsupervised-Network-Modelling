@@ -1,6 +1,19 @@
 # Multiscale Embedded Gene Network Analysis (MEGENA)
 
-This conducts a MEGENA analysis
+This repositiry contains code to run a Multiscale Embedded Gene Co-Expression Network using the 'MEGENA' package (Song et al., 2015).
 
-** DUE TO THE LARGE COMPUTATIONAL POWER THIS ANALYSIS TAKES IT SHOULD BE SUBMITTED AS A CLUSTER JOB
-** FOR THIS REASON, THE SCRIPT IS AN R FILE AND NOT RMD
+MEGENA revelas differnetually expressed modules of genes.
+
+There are *three* analyses in this repository
+1) MEGENA Analaysis
+2) Plotting Sunbursts of Modules
+3) Plotting Module Networks
+
+There are *three* files in this repository
+MEGENA_plotting (GSVA.Rmd)
+MEGENA (MEGENA.R)
+MEGENA.sh (MEGENA.sh)
+
+Note: 
+- Due to MEGENA being a computationally heavy analysis this script is a R file, prepared for workload manager submission. 
+- The shell (.sh) file will run the MEGENA on a slurm workspace manager using 24 cores.
