@@ -10,10 +10,10 @@ There are *three* analyses in this repository
 3) Plotting Module Networks
 
 There are *three* files in this repository
-MEGENA_plotting (GSVA.Rmd)
-MEGENA (MEGENA.R)
-MEGENA.sh (MEGENA.sh)
+1) MEGENA_plotting (plotting_megena.Rmd)
+2) MEGENA (megena.R)
+3) VMEGENA.sh (megena.sh)
 
 Note: 
 - Due to MEGENA being a computationally heavy analysis this script is a R file, prepared for workload manager submission. 
-- The shell (.sh) file will run the MEGENA on a slurm workspace manager using 24 cores.
+- The shell file (megena.sh) will run the MEGENA on a slurm workspace manager using 24 cores.
