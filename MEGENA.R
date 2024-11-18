@@ -1,3 +1,8 @@
+---
+title: "MEGENA"
+author: "Shay Simmons"
+output: html_document
+---
 
 ################################ Load the packages #############################
 
